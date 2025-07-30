@@ -1,21 +1,22 @@
 function header() {
     let header = document.createElement('header');
-    header.classList.add('main-header');
+    header.className = "headercontenedor";
 
-    let titulo = document.createElement('h1');
-    titulo.innerText = "Margeory";
-    titulo.classList.add('header-title');
+    let text = document.createElement('h1');
+    text.className = "header-texto";
+    text.innerText = "@mar-lopez0";
 
     let div = document.createElement('div');
-    div.classList.add('header-right');
+    div.className = "header-circulo";
 
-    // Círculo
-    let circulo = document.createElement('div');
-    circulo.classList.add('circulo');
-    div.appendChild(circulo);
+    
+    let img = document.createElement('img');
+    img.className = "imagen";
+    img.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png";
 
-    header.appendChild(titulo);
+    header.appendChild(text);
     header.appendChild(div);
+    div.appendChild(img);
 
     return header;
 }

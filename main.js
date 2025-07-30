@@ -1,19 +1,19 @@
-function seccion(){
-    
+import { header } from "./componentes/header/headerComponent.js";
+import { seccion1 } from "./componentes/seccion1/seccionComponent.js";
+
+function seccion (){
+
     let seccion = document.createElement('section');
 
-    let h1 = document.createElement('h1');
-    h1.className = "titulo";
-    h1.innerText = "Hola mundo";
-    seccion.appendChild(h1);
+    seccion.appendChild(header());
 
-    let parrafo = document.createElement('p');
-    parrafo.innerText = "Introducción a JavaScript"
-    seccion.appendChild(parrafo);
+
+
+    seccion.appendChild(seccion1());
+
 
     return seccion;
-
+    
 }
- document.body.appendChild(seccion());
 
-seccion();
+document.body.appendChild(seccion());
