@@ -2,4 +2,22 @@
     width: 20rem;
     height: 20rem;
     background-color: green;
+    margin-left: 15rem;
+}
+
+.imagen {
+    width: 6rem;
+    height: 6rem;
+    margin-left: 7rem;;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+
+.item p{
+    font-size: 0.8rem;
+}
+
+.item h1 {
+    font-size: 1.5rem;
+    margin-top: -16rem;
 }
