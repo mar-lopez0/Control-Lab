@@ -3,7 +3,7 @@ import { seccion1 } from "./componentes/seccion1/seccionComponent.js";
 
 function seccion (){
 
-    let seccion = document.createElement('section');
+    let seccion = document.createElement('seccion');
 
     seccion.appendChild(header());
 
