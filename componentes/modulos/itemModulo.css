@@ -1,21 +1,78 @@
+/* Tarjeta del producto */
 .item {
-    width: 20rem;
-    height: 20rem;
-    background-color: red;
-    color: white;
-    border-radius: 10px;
-    padding: 1rem;
-
+width: 100%;
+max-width: 350px;
+background: #fff;
+color: #222;
+border-radius: 15px;
+padding: 1.5rem;
+margin: auto;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+cursor: pointer;
 }
 
 .verde {
-    background-color: green;
-    
-}
-.item img{
-    width: 100%;
-    height: 100%;
-    border-radius: 3px;
+    background-color: rgb(216, 216, 180);
 }
 
 
+/* Imagen del producto */
+.item img {
+width: 100%;
+max-height: 220px;
+object-fit: contain;
+border-radius: 10px;
+margin-bottom: 1rem;
+}
+
+/* Título */
+.item .titulo {
+font-size: 1.2rem;
+font-weight: bold;
+color: #333;
+margin: 0.5rem 0;
+text-align: center;
+height: 3rem;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+
+/* Descripción */
+.item .description {
+font-size: 0.95rem;
+color: black;
+line-height: 1.4;
+margin-bottom: 1.2rem;
+height: 70px;
+overflow: hidden;
+text-overflow: ellipsis;
+text-align: center;
+}
+
+/* Precio */
+.item .price {
+font-size: 1.3rem;
+font-weight: bold;
+color: #2a9d8f;
+margin: 1rem 0;
+text-align: center;
+}
+
+/* Botón */
+.item button {
+background: #2a9d8f;
+color: #fff;
+font-size: 1rem;
+padding: 0.7rem;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+width: 100%;
+}
+
+.item button:hover {
+background: green;
+}
