@@ -3,27 +3,26 @@
     align-items: center;
     height: 15rem;
     grid-template-columns: 1fr auto;
-    border-bottom: 1rem solid black;
-    padding: 0.2rem;
-
+    border-bottom: 0.5rem solid #d63384; /* Rosa fuerte */
+    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #f8a1c4, #f06292);
+    box-shadow: 0 5px 20px rgba(214, 51, 132, 0.4);
 }
 
-.header-circulo {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 50px;
-    border: white;
-}
 
 .header-texto {
     font-size: 3rem;
-    
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(214, 51, 132, 0.5);
 }
 
 .imagen {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50px;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
     object-fit: cover;
+    border: 0.3rem solid white;
     margin-right: 1rem;
+    box-shadow: 0 3px 10px rgba(214, 51, 132, 0.4);
 }
