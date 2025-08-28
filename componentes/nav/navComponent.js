@@ -26,5 +26,5 @@
     cartDiv.innerText = "🛒";
     menu.appendChild(cartDiv);
 
-    return menu; 
+    return menu;
     }

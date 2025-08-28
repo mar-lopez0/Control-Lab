@@ -1,3 +1,5 @@
+
+
 export function item(titulo,urlImg,price,description) {
     
     let item = document.createElement('div');
@@ -26,11 +28,8 @@ export function item(titulo,urlImg,price,description) {
     item.appendChild(precioEl);
 
 
-    item.addEventListener('click' ,()=>{
-        item.classList.add("verde");
-        let headercontenedor = document.querySelector('header');
-        headercontenedor.classList.add("ocultar");
+    item.addEventListener('click', ()=>{
+        
     });
-
     return item;
 }

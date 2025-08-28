@@ -9,7 +9,7 @@
     box-shadow: 0 5px 20px rgba(214, 51, 132, 0.4);
 }
 
-
+/* Texto principal */
 .header-texto {
     font-size: 3rem;
     font-weight: bold;
@@ -17,6 +17,7 @@
     text-shadow: 2px 2px 5px rgba(214, 51, 132, 0.5);
 }
 
+/* Imagen circular */
 .imagen {
     width: 10rem;
     height: 10rem;
@@ -25,4 +26,25 @@
     border: 0.3rem solid white;
     margin-right: 1rem;
     box-shadow: 0 3px 10px rgba(214, 51, 132, 0.4);
+}
+
+/* 📱 Responsive Design para Teléfonos */
+@media (max-width: 600px) {
+    .headercontenedor {
+        grid-template-columns: 1fr; /* Todo en una columna */
+        height: auto;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .header-texto {
+        font-size: 2rem; /* Texto más pequeño para pantallas chicas */
+        margin-bottom: 1rem;
+    }
+
+    .imagen {
+        width: 7rem;
+        height: 7rem;
+        margin: 0 auto 1rem auto; /* Centrada arriba del texto */
+    }
 }

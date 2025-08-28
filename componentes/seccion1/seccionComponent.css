@@ -1,9 +1,29 @@
 .seccion1 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
     grid-template-rows: 1fr 1fr;
     gap: 2rem;
     margin-top: 2rem;
+    justify-items: center;
 
-    justify-content: center;
+    padding-bottom: 6rem;
+
 }
+
+/* 📱 Responsive Design para Teléfonos */
+@media (max-width: 600px) {
+    .seccion1 {
+        display: grid;
+        grid-template-columns:(2fr, 2fr); /* 2 columnas */
+        gap: 1rem; /* espacio entre elementos */
+        margin-top: 1rem;
+        padding-bottom: 3rem;
+
+        justify-items: center; /* centra horizontalmente cada ítem */
+        align-items: start;    /* alinea verticalmente al inicio */
+        text-align: center;    /* centra el contenido de texto */
+    }
+}
+
+
+

@@ -6,12 +6,30 @@ function seccion (){
 
     let seccion = document.createElement('seccion');
 
+    //LocalStorange
+    let listaDeCompras = localStorage.getItem("carritoLista")
+
+        if (!listaDeCompras) {
+            listaDeCompras = [];
+            localStorage.setItem("carrito", JSON.stringify(listaDeCompras));
+
+        } else {
+            listaDeCompras = JSON.parse(listaDeCompras);
+        }
+
+    console.log(listaDeCompras);
+
+
+    
+    //header
     seccion.appendChild(header());
 
 
-
+    //seccion
     seccion.appendChild(seccion1());
 
+
+    //nav
     seccion.appendChild(nav());
 
 
